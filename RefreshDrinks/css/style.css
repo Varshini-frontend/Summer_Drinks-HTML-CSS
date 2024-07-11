@@ -1,0 +1,229 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    color: #fff;
+}
+
+nav ul li:hover {
+    color: red;
+}
+
+/* Responsive search input */
+.search input {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* Welcome section styles */
+.welcome-container {
+    position: relative;
+    text-align: center;
+    padding: 50px;
+    background: url('https://images.unsplash.com/photo-1505935428862-770b6f24f629?q=80&w=1767&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    color: #000000;
+}
+
+.welcome-text {
+    margin-top: 20px;
+    color: #000000;
+}
+
+/* Products section styles */
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.products-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Box styles */
+.box {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.box img {
+    animation: fadeIn 1s ease-in-out;
+    border-radius: 20px 20px 0px 0px;
+}
+
+h4 {
+    text-align: center;
+    padding: 15px;
+}
+
+/* About section styles */
+.about {
+    text-align: center;
+    padding: 25px;
+    background-color: #f2f2f2;
+    background: url('https://icubeelectronics.com/wp-content/uploads/2018/05/beaches-refreshing-sweet-cocktail-tropical-cold-aqua-drinks-sky-sunshine-fresh-cool-beach-clouds-glass-blue-umbrella-ice-drink-wallpaper-scene-1920x1080.jpg') no-repeat center center/cover;
+}
+
+.p1 {
+    padding: 15px;
+}
+
+/* Contact section styles */
+.contact {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h1:hover {
+    color: red;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.para {
+    margin-top: 10px;
+}
+
+h3:hover {
+    color: red;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .products {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .search input {
+        width: 80%;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-container {
+        padding: 30px;
+    }
+
+    .welcome-text {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .search input {
+        width: 90%;
+    }
+
+    .box {
+        margin: 5px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .contact {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .welcome-container {
+        padding: 20px;
+    }
+
+    .welcome-text {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .products-title {
+        font-size: 18px;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .box {
+        margin: 5px 0;
+    }
+
+    .about {
+        padding: 15px;
+    }
+
+    .contact {
+        padding: 10px;
+    }
+}
